@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="This is an basic javascript cart app usnig the vanilla javascript not included any external library just the pure html/css and javascript">
+    <title>javascript cart</title>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <!-- Navbar start -->
+    <!-- Navbar start -->
+    <header>
+        <nav id="Navbar" class="container">
+            <ul>
+                <li id="CartBtn"><i class="fa fa-cart-plus"></i> <span id="CartItemCounter">0</span></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar end -->
+    <!-- Navbar end -->
+    <!-- Navbar end -->
+    <section class="section_1">
+        <div id="ItemsSection">
+          <div class="heading flex">
+             <h1> Items </h1>
+             <h1> Price </h1>
+             <h1> Cart </h1>
+        </div>
+        <div class="items" id="Items">
+            <div class="item flex">
+                <h2>Apple</h2>
+                <h2>100</h2>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="CartSection" class="section_2" hidden>
+        <div class="cart_heading"><h1>Cart Items</h1></div>
+        <button class="hide_cart_btn" id="HideCartBtn">X</button> 
+        <div id="Cart">
+            <div class="cart_item flex">
+                <h3>Apple</h3>
+                <h3>100</h3>
+                <button class="btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart_total flex" id="cartTotal" >
+            <h3 class="total_items">Total items : 2</h3>
+            <h3 class="total_price">Total price : 100</h3>
+        </div>
+    </section>
+
+    <script src="./app.js"> </script>
+</body>
+
+</html>
